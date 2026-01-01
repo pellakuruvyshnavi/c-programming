@@ -1,13 +1,13 @@
 #include <stdio.h>
-int main(){
-    int i ,n;
+int main() {
+    int n,count =0;
     scanf("%d",&n);
-    printf("enter a number ");
-
-    printf("count digits in a number for %d",n);
-    for (i=1;i<=10;i++){
+      while (n!=10){
+          count++;
+          n=n/10;
 
         printf("%d",n);
-    }
+    
+      }
     return 0;
 }
