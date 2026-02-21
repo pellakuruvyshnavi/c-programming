@@ -1,11 +1,15 @@
 #include <stdio.h>
 int main() {
-    int i , j ;
-    for(i = 1 ; i <= 5 ; i++){
-    for(j = 1 ; j <= 5 ; j++){
-      printf("*");
+    int n,i,j;
+    printf("Enter a number  ");
+    scanf("%d",&n);
+    for (int i=n;i>=0;i--){
+        for (int j=1;j<=i;j++){
+            printf(" * ");
+        }
+    
+    printf("\n");
     }
-     printf("\n");
-    }
+    
     return 0;
 }
